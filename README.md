@@ -1,3 +1,7 @@
+[![DOI](https://zenodo.org/badge/404800705.svg)](https://zenodo.org/badge/latestdoi/404800705)
+
+
+
 # UllahGECCO2021
 This repository contains the code for adapting the Moment-Generating Function of the Improvement (MGFI) for Robust Bayesian Optimization [[1]](#1).
 The code implements the evaluation of the MGFI in Python.
