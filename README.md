@@ -10,7 +10,7 @@ is to find solutions immune to the uncertainty in the decision/search variables.
 # Introduction
 This code is based on our paper, titled [A New Acquisition Function for Robust Bayesian
 Optimization of Unconstrained Problems](https://dl.acm.org/doi/pdf/10.1145/3449726.3463206) (Ullah, Wang, Menzel, Sendhoff & Bäck, 2021), and can be used to reproduce
-the experimental setup and results. The code is produced in Python 3.7.0. The main packages utilized in this code are presented in the next section which deals with technical requirements. 
+the experimental setup and results mentioned in the paper. The code is produced in Python 3.7.0. The main packages utilized in this code are presented in the next section which deals with technical requirements. 
 
 The code is saved in the directory, which is titled `Baseline Comparison`. This directory contains four other directories, which are
 named after four test problems considered in the paper. The name of these directroeis are `Branin`, `Eight-Dimensional`, `Ten-Dimensional`, and `Three-Dimensional` respectively. 
@@ -25,23 +25,26 @@ In the following, we describe the technical requirements as well the instruction
 
 
 ## Requiremnts
+In this code, we make sue of four python packages (among others), which are presented below in the table.
+In particular, `pyDOE2` can be utilized for sampling plans and Design of Experiment (DoE).
+For the same purpose, `SMT` package may also be used.
+We employ the so-called `Latin Hypercube Sampling` based on the `SMT` package.  
+For the purpose of numerical optimization in the code, e.g., to maximize the acquisition function, we utilize the famous `L-BFGS` algorithm based on `SciPy` package.
+Finally, the main purpose of the `scikit-learn` package is to construct the Kriging surrogate, as well as data manipulation/wrangling in genera 
+All four required packages can be installed by executing `pip install -r requirements.txt` from the main directory via the command line.
 
 | Package | Description |
 | --- | --- |
-| pyDOE2 | For sampling plans and Design of Experiment (DoE)  |
-| SciPy |For numerical optimization based on L-BFGS-B algorithm |
-| SMT |Surrogate Modeling Toolbox utilized for the implementation of Branin Function |
-| scikit-learn | For constructing the Kriging surrogate, as well as data manipulation |
+| pyDOE2 | For sampling plans and Design of Experiment (DoE).  |
+| SciPy |For numerical optimization based on L-BFGS-B algorithm. |
+| SMT |Surrogate Modeling Toolbox utilized for the implementation of Branin Function. |
+| scikit-learn | For constructing the Kriging surrogate, as well as data manipulation. |
+
+In the following, we describe how to reproduce the experimental setup and results mentioned in our paper.
 
 
 
-For this project to run you need:
-* Python >= 3.5
-* Numpy 1.20.0
-* pyDOE2 1.3.0
-* Scipy 1.6.1
-* SMT 1.0.0
-* Scikit-learn 0.24.0 
+
 
 ## References:
 <a id="1">[1]</a> 
