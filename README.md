@@ -42,10 +42,36 @@ All four required packages can be installed by executing `pip install -r require
 
 In the following, we describe how to reproduce the experimental setup and results mentioned in our paper.
 
+## 1. Setting up the Test Problem
+The first step in the paper is to determine the test problem, and noise level (the scale of uncertainty).
+The scale of uncertainty is based on three different levels as stated earlier, which represent 5, 10, and 20 % deviation in the nominal values of the decision variables.
+Based on the chosen test problem and noise level, we setup the global parameters in our code which characterize the search space, e.g., bounds.
+The global parameters have to be set manually in the file `RBO.ipynb` based on the test problem, and noise level.
+Note that same parameters setting should be present for both acquisition functions.
 
+## 2. Choose Initial Samples based on DoE
+After the global parameters have been set, we utilize the method `DOE` from `Utils.py` to retrieve the initial sampling locations.
+The sampling locations are based on the `Latin Hypercube Sampling` scheme, which can be implemented by the `SMT` or the `pyDOE2` package.
 
+## 3. Run Robust Bayesian Optimization
+After retrieving the sampling coordinates to observe the function response, we have to use the `bayesian_optimisation` method in `RBO.ipynb`
+to run the RBO. This refers to observing the function response, as well constructing and updating the Kriging surrogate in a sequential manner based
+on the chosen acquisition function. This method returns the robust optimum, which can be stored if desirable. RBO is run for 25 independent runs
+and the averaged results are compared.
 
+## Citation
+## Paper Reference
+Sibghat Ullah, Hao Wang, Stefan Menzel, Bernhard Sendhoff, and Thomas Bäck. 2021. A New Acquisition Function for Robust Bayesian Optimization
+of Unconstrained Problems. In 2021 Genetic and Evolutionary Computation Conference Companion (GECCO ’21 Companion), July 10–14, 2021, Lille,
+France. 
+## BibTex Reference
+`@inproceedings{ullah2021new,`\
+  `title={A new acquisition function for robust Bayesian optimization of unconstrained problems},`\
+  `author={Ullah, Sibghat and Wang, Hao and Menzel, Stefan and Sendhoff, Bernhard and B{\"a}ck, Thomas},`\
+  `booktitle={Proceedings of the Genetic and Evolutionary Computation Conference Companion},`\
+  `pages={1344--1345},`\
+  `year={2021}`\
+`}`
 
-## References:
-<a id="1">[1]</a> 
-Ullah, Sibghat, et al. "A New Acquisition Function for Robust Bayesian Optimization of Unconstrained Problems." (2021).
+## Acknowledgements
+This research has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement number 766186 (ECOLE).
