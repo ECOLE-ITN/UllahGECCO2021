@@ -24,7 +24,7 @@ As the name suggests, the `Utils.py` contains the utility functions to run Robus
 In the following, we describe the technical requirements as well the instructions to run the code in a sequential manner.
 
 
-## Requiremnts
+# Requiremnts
 In this code, we make sue of four python packages (among others), which are presented below in the table.
 In particular, `pyDOE2` can be utilized for sampling plans and Design of Experiment (DoE).
 For the same purpose, `SMT` package may also be used.
@@ -59,7 +59,7 @@ to run the RBO. This refers to observing the function response, as well construc
 on the chosen acquisition function. This method returns the robust optimum, which can be stored if desirable. RBO is run for 25 independent runs
 and the averaged results are compared.
 
-## Citation
+# Citation
 ## Paper Reference
 Sibghat Ullah, Hao Wang, Stefan Menzel, Bernhard Sendhoff, and Thomas Bäck. 2021. A New Acquisition Function for Robust Bayesian Optimization
 of Unconstrained Problems. In 2021 Genetic and Evolutionary Computation Conference Companion (GECCO ’21 Companion), July 10–14, 2021, Lille,
@@ -73,5 +73,5 @@ France.
   `year={2021}`\
 `}`
 
-## Acknowledgements
+# Acknowledgements
 This research has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement number 766186 (ECOLE).
