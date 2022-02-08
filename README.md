@@ -25,6 +25,16 @@ In the following, we describe the technical requirements as well the instruction
 
 
 ## Requiremnts
+
+| Package | Description |
+| --- | --- |
+| pyDOE2 | For sampling plans and Design of Experiment (DoE)  |
+| SciPy |For numerical optimization based on L-BFGS-B algorithm |
+| SMT |Surrogate Modeling Toolbox utilized for the implementation of Branin Function |
+| scikit-learn | For constructing the Kriging surrogate, as well as data manipulation |
+
+
+
 For this project to run you need:
 * Python >= 3.5
 * Numpy 1.20.0
