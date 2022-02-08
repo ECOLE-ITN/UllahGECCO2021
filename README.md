@@ -12,7 +12,7 @@ This code is based on our paper, titled [A New Acquisition Function for Robust B
 Optimization of Unconstrained Problems](https://dl.acm.org/doi/pdf/10.1145/3449726.3463206) (Ullah, Wang, Menzel, Sendhoff & Bäck, 2021), and can be used to reproduce
 the experimental setup and results. The code is produced in Python 3.7.0. The main packages utilized in this code are presented in the next section which deals with technical requirements. 
 
-The code is saved in the directory, which is titled Baseline comparison.
+The code is saved in the directory, which is titled `Baseline comparison`.
 
 
 ## Requiremnts
