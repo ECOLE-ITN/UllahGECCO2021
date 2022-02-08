@@ -2,7 +2,7 @@
 
 
 
-# UllahGECCO2021
+# Comparison of Moment-Generating Function of Improvement and Expected Improvement Criterion for Robust Bayesian Optimization
 This repository contains the code for adapting the Moment-Generating Function of the Improvement (MGFI) for Robust Bayesian Optimization [[1]](#1).
 The code implements the evaluation of the MGFI in Python.
 
