@@ -3,11 +3,10 @@
 
 
 # Comparison of Moment-Generating Function of Improvement and Expected Improvement Criterion for Robust Bayesian Optimization
-<p align="center">
 Contains code for the empirical comparison of two acquisition functions, namely the so-called Moment-Generating Function of the Improvement (MGFI) and
 the Expected Improvement Criterion (EIC). The performance comparison is based on the scenarios of optimization under uncertainty aka Robust Optimization, where the focus
 is to find solutions immune to the uncertainty in the decision/search variables. In the comparison, EIC serves as a baseline.
-</p>
+
 
 
 
