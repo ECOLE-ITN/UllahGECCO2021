@@ -9,7 +9,7 @@ is to find solutions immune to the uncertainty in the decision/search variables.
 
 # Introduction
 This code is based on our paper [A New Acquisition Function for Robust Bayesian
-Optimization of Unconstrained Problems] (https://dl.acm.org/doi/pdf/10.1145/3449726.3463206)
+Optimization of Unconstrained Problems](https://dl.acm.org/doi/pdf/10.1145/3449726.3463206)
 
 
 ## Requiremnts
