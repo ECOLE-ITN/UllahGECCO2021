@@ -7,7 +7,9 @@ Contains code for the empirical comparison of two acquisition functions, namely 
 the Expected Improvement Criterion (EIC). The performance comparison is based on the scenarios of optimization under uncertainty aka Robust Optimization, where the focus
 is to find solutions immune to the uncertainty in the decision/search variables. In the comparison, EIC serves as a baseline.
 
-
+# Introduction
+This code is based on our paper [A New Acquisition Function for Robust Bayesian
+Optimization of Unconstrained Problems] (https://dl.acm.org/doi/pdf/10.1145/3449726.3463206)
 
 
 ## Requiremnts
