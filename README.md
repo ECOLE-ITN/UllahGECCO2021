@@ -12,7 +12,16 @@ This code is based on our paper, titled [A New Acquisition Function for Robust B
 Optimization of Unconstrained Problems](https://dl.acm.org/doi/pdf/10.1145/3449726.3463206) (Ullah, Wang, Menzel, Sendhoff & Bäck, 2021), and can be used to reproduce
 the experimental setup and results. The code is produced in Python 3.7.0. The main packages utilized in this code are presented in the next section which deals with technical requirements. 
 
-The code is saved in the directory, which is titled `Baseline comparison`.
+The code is saved in the directory, which is titled `Baseline Comparison`. This directory contains four other directories, which are
+named after four test problems considered in the paper. The name of these directroeis are `Branin`, `Eight-Dimensional`, `Ten-Dimensional`, and `Three-Dimensional` respectively. 
+Each of these directories contains further two sub-directories, namely `EIC` and `MGFI`.
+Logically, these sub-directories contain the implementation of the corresponding acquisition functions.
+The implementation of the acquisition function is based on the noise level chosen, where the noise level describes the scale of uncertainty, e.g., how
+much uncertain each decision/search variables is? In the paper, we deal with three increasing noise levels.
+The nomenclature of the subdirectories in `EIC` and `MGFI` is based on these three noise levels, namely `Noise Level1`, `Noise Level2`, and `Noise Level3` respectively.
+Finally, each noise level implementation contains two files, namely `Utils.py` and `RBO.ipynb`.
+As the name suggests, the `Utils.py` contains the utility functions to run Robust Bayesian Optimization (RBO), which is ececuted in `RBO.ipynb`.
+In the following, we describe the technical requirements as well the instructions to run the code in a sequential manner.
 
 
 ## Requiremnts
